@@ -1,0 +1,44 @@
+.graph-div#expenses-exist {
+    margin: 3rem auto;
+    width: 80%;
+    height: 500px;
+}
+
+.graph-div#no-expenses-found {
+    margin: 3rem auto;
+    height: 150px;
+}
+
+.activity-div#expenses-exist {
+    margin: 2rem auto;
+    width: 80%;
+    height: 400px;
+}
+
+.activity-div#no-expenses-found {
+    margin: 2rem auto;
+    height: 150px;
+}
+
+.expense-activity-container,
+.expense-graph-container {
+    background-color: var(--medium-light);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: 100%;
+}
+
+@media (max-width: 450px) {
+    .activity-div {
+        min-width: 95%;
+    }
+}
+
+@media (min-width: 450px) {
+    .activity-div {
+        width: 80%;
+    }
+}

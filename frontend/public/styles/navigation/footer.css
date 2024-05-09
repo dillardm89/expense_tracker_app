@@ -1,0 +1,22 @@
+#footer-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+    gap: 10px;
+    color: var(--lightest)
+}
+
+#footer-div h4 {
+    margin: 0;
+}
+
+.footer-icon {
+    align-self: center;
+}
+
+.footer-icon img {
+    width: 25px;
+    padding-top: 7px;
+
+}

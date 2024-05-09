@@ -1,0 +1,228 @@
+.no-expenses-div {
+    margin: auto;
+}
+
+.no-expenses-div p {
+    margin: 0.5rem;
+}
+
+.scroller {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: always;
+    height: 100vh;
+}
+
+.scroller li {
+    scroll-snap-align: center;
+}
+
+.expense-list-ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+.expense-activity-heading {
+    width: 90%;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.expense-activity-heading h2 {
+    margin: 0;
+    align-self: center;
+}
+
+.expense-activity-actions {
+    display: flex;
+    width: 30%;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.sort-expenses-div {
+    justify-content: flex-start;
+    display: flex;
+    gap: 5px;
+}
+
+.sort-expenses-div,
+.expense-item-type,
+.expense-item-category,
+.expense-item-amount {
+    width: 15%;
+}
+
+.sort-expenses-div#date,
+.sort-expenses-div#vendor,
+.expense-item-vendor,
+.expense-item-date {
+    width: 20%;
+}
+
+.sort-expenses-div .expense-heading {
+    align-self: center;
+}
+
+.sort-expenses-div img {
+    width: 20px;
+    align-self: center;
+}
+
+.sort-expenses-div img:hover {
+    background-color: var(--lightest);
+    border-radius: 5px;
+}
+
+.expense-activity-list {
+    padding: 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.expense-list-heading {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.expense-list-heading h4 {
+    color: var(--darkest);
+    margin: 0;
+}
+
+.expense-icons-heading {
+    white-space: nowrap;
+    text-align: right;
+}
+
+.expense-icons-heading,
+.expense-icons-div {
+    width: 10%;
+}
+
+.expense-list-item {
+    display: flex;
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+.expense-item-vendor,
+.expense-item-date,
+.expense-item-amount,
+.expense-item-type,
+.expense-item-category {
+    align-self: center;
+    padding: 0;
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.expense-icons-div {
+    align-self: center;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.expense-icons-div img {
+    width: 20px;
+}
+
+.edit-expense-icon:hover {
+    background-color: lightgreen;
+    border-radius: 5px;
+}
+
+.delete-expense-icon:hover {
+    background-color: lightcoral;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 900px) {
+    .sort-expenses-div {
+        gap: 0;
+    }
+
+    .sort-expenses-div,
+    .expense-item-type,
+    .expense-item-category,
+    .expense-item-amount {
+        width: 16%;
+    }
+
+    .sort-expenses-div#date,
+    .sort-expenses-div#vendor,
+    .expense-item-vendor,
+    .expense-item-date {
+        width: 20%;
+    }
+
+    .expense-icons-heading,
+    .expense-icons-div {
+        width: 13%;
+    }
+}
+
+.csv-button-div {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px
+}
+
+@media (max-width: 700px) {
+
+    .expense-activity-actions {
+        flex-direction: column;
+        width: 25%;
+        gap: 5px;
+    }
+
+    .expense-list-heading {
+        gap: 10px;
+    }
+
+    .sort-expenses-div h4 {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .expense-list-item {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .expense-activity-actions {
+        width: 35%;
+    }
+
+    .expense-icons-heading,
+    .expense-icons-div {
+        display: none;
+    }
+
+    .sort-expenses-div,
+    .expense-item-amount,
+    .expense-item-category,
+    .expense-item-vendor,
+    .expense-item-type {
+        width: 15%;
+    }
+
+    .sort-expenses-div#date,
+    .expense-item-date {
+        width: 30%;
+    }
+}

@@ -1,0 +1,35 @@
+.csv-modal-form {
+    width: 80%;
+}
+
+
+.file-name-div {
+    text-align: center;
+}
+
+.file-name-div #file-selected {
+    margin: 15px auto;
+    width: 80%;
+    border: 1px solid var(--darkest);
+    border-radius: 10px;
+    padding: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.file-name-div #no-file-selected {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.heading-checkbox-div {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.heading-checkbox-div input {
+    margin-right: 5px;
+    color: var(--medium-light);
+    accent-color: var(--medium-light);
+}

@@ -1,0 +1,23 @@
+.expense-modal-form {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.import-csv-div {
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.expense-modal-form form {
+    align-self: center;
+    width: 95%;
+}
+
+.expense-form-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}

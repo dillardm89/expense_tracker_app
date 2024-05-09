@@ -1,0 +1,41 @@
+.nav-links {
+    padding: 0;
+}
+
+.nav-links li {
+    list-style: none;
+    margin: 20px;
+}
+
+.nav-links a:hover,
+.nav-links a:active,
+.nav-links a:focus,
+.nav-links button:hover,
+.nav-links button:active,
+.nav-links button:focus {
+    background-color: var(--medium-light);
+}
+
+.main-header-nav .nav-links {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4rem;
+    align-items: center;
+}
+
+.side-drawer-nav .nav-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav-links a {
+    color: var(--lightest);
+    background-color: transparent;
+    font-size: 1rem;
+    text-decoration: none;
+    border: 1px solid var(--lightest);
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer
+}

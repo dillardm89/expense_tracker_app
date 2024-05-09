@@ -1,0 +1,32 @@
+.settings-div#settings-exist {
+    margin: 2rem auto;
+    height: 350px;
+}
+
+.settings-div#no-settings-found {
+    margin: 2rem auto;
+    height: 150px;
+}
+
+.no-settings-div p {
+    margin: 0.5rem;
+}
+
+
+@media (max-width: 450px) {
+    .settings-div {
+        min-width: 95%;
+    }
+}
+
+@media (max-width:750px) {
+    .settings-div {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 750px) {
+    .settings-div {
+        width: 700px;
+    }
+}

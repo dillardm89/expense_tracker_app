@@ -1,0 +1,169 @@
+.modal-close-btn {
+    width: 90px;
+    padding: 0.5rem 1rem;
+    background-color: var(--medium-dark);
+    color: var(--lightest);
+    border: 1px solid var(--darkest);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.modal-delete-btn {
+    width: 90px;
+    padding: 0.5rem 1rem;
+    background-color: lightcoral;
+    color: var(--darkest);
+    border: 1px solid var(--darkest);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.modal-save-btn {
+    width: 90px;
+    padding: 0.5rem 1rem;
+    background-color: var(--medium-dark);
+    color: var(--lightest);
+    border: 1px solid var(--darkest);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.modal-select-btn {
+    width: max-content;
+    padding: 0.5rem 1rem;
+    background-color: var(--medium-dark);
+    color: var(--lightest);
+    border: 1px solid var(--darkest);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.modal-close-btn:hover,
+.modal-select-btn:hover {
+    background-color: var(--medium-light);
+    color: var(--lightest);
+}
+
+.modal-delete-btn:hover {
+    background-color: red;
+    color: var(--lightest);
+}
+
+.modal-save-btn:hover {
+    background-color: lightgreen;
+    color: var(--darkest);
+}
+
+.close-detail-btn {
+    align-self: center;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--medium-dark);
+    padding: 0.25rem;
+    font-size: 1rem;
+    text-align: center;
+    background: transparent;
+    border: 1px solid var(--medium-dark);
+    border-radius: 5px;
+}
+
+.close-detail-btn:hover {
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: red;
+    color: var(--lightest);
+}
+
+.drawer-close-button {
+    cursor: pointer;
+    color: var(--lightest);
+    padding: 0.25rem;
+    margin: 20px;
+    font-size: 1rem;
+    text-align: center;
+    background: transparent;
+    border: none;
+}
+
+.drawer-close-button:hover,
+.drawer-close-button:active,
+.drawer-close-button:focus {
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: red;
+    color: var(--lightest);
+}
+
+.add-category-btn {
+    text-align: center;
+    padding: 0.25rem 0.5rem;
+    height: 80%;
+    background-color: var(--lightest);
+    color: var(--darkest);
+    border-radius: 5px;
+    align-self: center;
+}
+
+.add-category-btn:hover {
+    background-color: var(--medium-dark);
+    color: var(--lightest);
+}
+
+.add-expense-btn {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: var(--lightest);
+    color: var(--darkest);
+    border-radius: 5px;
+    border: 1.5px solid var(--darkest)
+}
+
+.add-expense-link {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.2;
+    padding: 0.5rem;
+    background-color: var(--lightest);
+    border: 1.5px solid var(--darkest);
+    color: var(--darkest);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.add-expense-btn:hover,
+.add-expense-link:hover {
+    background-color: var(--medium-dark);
+    border-color: var(--lightest);
+    color: var(--lightest);
+}
+
+.csv-btn {
+    text-align: center;
+    padding: 0.25rem 0.5rem;
+    background-color: var(--medium-dark);
+    color: var(--lightest);
+    border-radius: 5px;
+}
+
+.csv-btn:hover {
+    background-color: var(--lightest);
+    color: var(--darkest);
+}
+
+.standard-btn,
+.btn-link {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--lightest);
+    color: var(--darkest);
+    border-radius: 5px;
+}
+
+.standard-btn:hover,
+.btn-link:hover {
+    background-color: var(--medium-dark);
+    color: var(--lightest);
+}

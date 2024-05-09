@@ -1,0 +1,116 @@
+.read-only-input-div {
+    border: none;
+    background: transparent;
+    color: black;
+    font-size: 1rem;
+}
+
+.input-field {
+    background-color: white;
+    color: black;
+    width: 30ch;
+    height: 1.5rem;
+}
+
+.input-field#type,
+.input-field#display-color,
+.input-field#category {
+    width: 226px;
+    border: 1px solid black;
+}
+
+.input-text-area {
+    background-color: white;
+    color: black;
+    min-width: 220px;
+    max-width: 220px;
+    min-height: 50px;
+}
+
+.input-field:hover,
+.input-field:active,
+.input-text-area:hover,
+.input-text-area:active {
+    background-color: lightgoldenrodyellow;
+}
+
+.form-input-fields {
+    display: flex;
+    align-self: flex-end;
+    padding: 0.5rem;
+    color: black;
+    gap: 10px;
+}
+
+.input-error-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+}
+
+.error-label {
+    text-align: center;
+    width: 220px;
+    background-color: lightcoral;
+    padding: 2px;
+    color: black;
+    margin: 2px 0 0 0;
+    font-size: .9rem;
+}
+
+.input-label {
+    width: 140px;
+    align-self: center;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.input-label p {
+    margin: 0;
+}
+
+
+@media (max-width: 500px) {
+    .form-input-fields {
+        width: 100%;
+    }
+
+    .input-label {
+        text-wrap: wrap;
+        min-width: 85px;
+    }
+
+    .input-field {
+        width: 20ch;
+    }
+
+    .input-field#type,
+    .input-field#display-color,
+    .input-field#category {
+        width: 175px;
+    }
+
+    .input-text-area {
+        min-width: 170px;
+        max-width: 170px;
+        min-height: 50px;
+    }
+
+    .category-form-div .input-field,
+    .expense-form-div .input-field {
+        width: 23ch;
+    }
+
+    .expense-form-div .input-text-area {
+        min-width: 168px;
+        max-width: 168px;
+        min-height: 50px;
+    }
+
+    .error-label {
+        width: 145px;
+    }
+}
