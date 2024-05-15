@@ -36,7 +36,7 @@ class ExpenseSerializer(serializers.ModelSerializer):
         # Create new instance of Expense model once data validated
         return Expense.objects.create(**validated_data)
 
-    def partial_update(self, instance, validated_data) -> Expense:
+    def update(self, instance, validated_data) -> Expense:
         # Update existing instance of Expense model once data validated
         instance.vendor = validated_data.get('vendor', instance.vendor)
         instance.description = validated_data.get(
