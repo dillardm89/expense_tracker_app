@@ -39,7 +39,7 @@ class CategorySerializer(serializers.ModelSerializer):
         # Create new instance of Category model once data validated
         return Category.objects.create(**validated_data)
 
-    def partial_update(self, instance, validated_data) -> Category:
+    def update(self, instance, validated_data) -> Category:
         # Update existing instance of Category model once data validated
         instance.name = validated_data.get('name', instance.name)
         instance.display_color = validated_data.get(
