@@ -50,7 +50,7 @@ class UserSerializer(DynamicFieldsModelSerializer):
         # Create new instance of User model once data validated
         return User.objects.create(**validated_data)
 
-    def partial_update(self, instance, validated_data) -> User:
+    def update(self, instance, validated_data) -> User:
         # Update existing instance of User model once data validated
         instance.email = validated_data.get('email', instance.email)
         instance.username = validated_data.get('username', instance.username)
