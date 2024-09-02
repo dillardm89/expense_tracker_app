@@ -21,12 +21,7 @@ Expense Tracker app using React + Typescript + Django
 
 ## Installation
 
-### Backend Env Variables
-
-- SECRET_KEY = 'your_django_secret_key'
-- SITE_URL = 'your_api_url' (ex: http://localhost:5173)
-
-### Backend - Run in Development
+### Backend
 
 ```bash
 # Create virtual environment then runs on 'localhost:8000'
@@ -43,15 +38,9 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-### Frontend Env Variables
-
-- VITE_APP_API_URL = 'your_api_url' (ex: http://localhost:8000)
-- VITE_APP_API_USERID = 'you_user_id' (User id after creating in db)
-
-### Frontend - Run in Development
+### Frontend
 
 ```bash
-# Install node modules from package.json then runs on 'localhost:5174'
 cd frontend
 npm install
 npm run dev
